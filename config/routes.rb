@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resource :users
+  resources :users
   root "static_pages#home"
   get  "/help", to: "static_pages#help", as: 'helf'
   get  "/about", to: "static_pages#about"
